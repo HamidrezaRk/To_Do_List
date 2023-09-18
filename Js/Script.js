@@ -32,7 +32,7 @@ function Add_Task()
         Ctr_li.appendChild(Ctr_span);
     }
     TextInput.value='';
-    //savadata
+    Save_Task();
 }
 
 ListTask.addEventListener("click", function (e) {
@@ -48,11 +48,12 @@ ListTask.addEventListener("click", function (e) {
 
 // Function Save to Task
 function Save_Task() {
-    localStorage.setItem('data',ListTask.innerHTML);
+    localStorage.setItem("data",ListTask.innerHTML);
 }
 // Function Save to Task
 
 function show_list()
 {
-    ListTask.innerHTML=localStorage.getItem('data');
+    ListTask.innerHTML=localStorage.getItem("data");
 }
+show_list()
