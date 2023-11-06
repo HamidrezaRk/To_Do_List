@@ -31,8 +31,7 @@ function Add_Task()
         Ctr_span.innerHTML="\u00d7";
         Ctr_li.appendChild(Ctr_span);
     }
-    TextInput.value='';
-    Save_Task();
+    Save_Task(TextInput);    
 }
 
 ListTask.addEventListener("click", function (e) {
@@ -47,8 +46,20 @@ ListTask.addEventListener("click", function (e) {
 }, false);
 
 // Function Save to Task
-function Save_Task() {
-    localStorage.setItem("data",ListTask.innerHTML);
+function Save_Task(a) {
+    const item =a.value.trim();
+    if(item ){
+        //item
+        a.value = "";
+        const todo = !localStorage.getItem("List_todo") ? [] :
+            JSON.parse(localStorage.getItem("List_todo"));
+
+        const currenttodo = {
+            Todo: item
+        };    
+        todo.push(currenttodo);
+        localStorage.setItem("List_todo", JSON.stringify(todo));
+    }
 }
 // Function Save to Task
 
