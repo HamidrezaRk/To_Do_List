@@ -1,0 +1,196 @@
+*
+{
+margin: 0;
+padding: 0;
+font-family:BYekan;
+}
+@font-face {
+    font-family:BYekan;
+    src: url(Fonts/yekan-regular.woff) format("woff");
+}
+
+body
+{
+    background: linear-gradient(140deg,#0079FF,#00DFA2); 
+}
+.My_app
+{
+    width: 100%;
+    min-height: 960px;
+}
+.My_app .align
+{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding:80px 0 ;
+}
+.My_app .app
+{
+    width: 375px;
+    min-height: 200px;
+    margin: 0 auto;
+    border-radius: 20px;
+    background: #fff;
+    text-shadow:  0 0 1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px  10px 10px rgba(14, 4, 4, 0.15);
+   
+}
+.My_app .app .TopInfo
+{
+    position: relative;
+    height: 210px;
+    width: auto;
+    border-top-left-radius: 22px;
+    border-top-right-radius: 22px;
+    background: linear-gradient(135deg, rgba(73, 201, 237, 0.358) -10%, rgba(239, 239, 239, 0.655) 180%), url(/img/img2.png);
+    background-size: cover;
+}
+.Title
+{
+  display: flex;
+  width: 100%;
+  height: 50px;
+  margin-left: 20%;
+
+}
+p
+{
+  font-size: 20px;
+  text-align: center;
+  margin-left: 15px;
+  font-weight: 700;
+
+}
+.My_app .app .TopInfo .DateNow
+{
+    position: relative;
+    width: 100%;
+    padding: 10px 0 5px 0 ;
+}
+
+.DateNow
+{
+    display: inline-block;
+    height: 20%;
+  
+}
+#Date
+{
+   
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:#fff ;
+    font-size: 2.9rem;
+    text-align: center;
+    padding-top: 5%;
+    
+}
+.My_app  ul
+{
+     width: 100%;
+     margin: 10px auto 10px auto;
+
+}
+.My_app ul #Title
+{
+    width: 100%;
+    height: 52px;
+    font-weight: bold;
+    margin: 10px auto;
+    text-align: center;
+    font-size:1.5rem ;
+    line-height: 50px;
+    color: #EDEDED;
+    
+}
+.Add-Task
+{
+  display: flex;
+  width: 100%;
+  height:18%;
+  display: flex;
+  margin: 40px 0 0 0;
+  
+}
+input
+{
+  width: 90%;
+  position: relative;
+  border: none;
+  outline: none;
+  color:black;
+  padding-left: 5%;
+  background: linear-gradient(60deg,rgb(23, 107, 135)-5%,rgb(100, 204, 197),rgb(238, 238, 238));
+  border-radius: 10px;
+
+}
+#Add
+{
+  height: 18%;
+  width: 15%;
+  border-radius: 10px;
+  position: absolute;
+  margin-left: 85.2%;
+  background: #053B50;
+  transition: all 0.2s ease;
+  color: #fff;
+} 
+#Add:active
+{
+transform: scale(0.96);
+
+} 
+ul li
+{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+} 
+ul li::before {
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50px;
+  background-image: url(/img/icon.png);
+  background-size: cover;
+  background-position: center;
+  top: 7px;
+  left: 8px;
+  transition: all 0.35s;
+}
+ul li.checked {
+  color: #696161;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url('/img/check.png');
+  height: 50px;
+  width: 50px;
+  margin-top: -8px;
+  margin-left: -10px;
+}
+
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  transition: all 0.35s;
+
+}
+
+ul li span:hover {
+color: red;
+}
+

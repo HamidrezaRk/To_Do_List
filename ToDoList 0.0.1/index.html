@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/Css" href="Css/style.css">
+    <title>ToDoList-App</title>
+</head>
+<body>
+ <div class="My_app" id="My_app">
+       <div class="align">
+            <div class="app">
+                    <!-- Start Top Info -->
+                    <div class="TopInfo">
+                          <div class="Title">
+                                <img src="img/list1.png" alt="image" id="icone">
+                                <p>فهرست کارهای روزانه</p>
+                          </div>
+                            <!-- Date Now -->
+                            <div class="DateNow">
+                                <p id="Date"></p> 
+                            </div>
+                            <!-- Date Now -->
+                    
+                        <!-- Start Add Task     -->
+                            <div class="Add-Task">
+                                <input type="text" id="Input-Task" placeholder="کار خود را بنویسید">
+                                <button onclick="Add_Task()" id="Add">اضافه</button>
+                            </div>
+                        <!-- End Add Task     -->
+                      </div>
+                <ul id="List_Task">
+                   <!-- // <p id="Title">لیست کار ها</p> -->
+
+                </ul>
+                <!-- End Task List -->  
+         </div>  
+       </div>
+ </div>
+    <script src="Js/jalali.js"></script>
+    <script src="Js/Script.js"></script>
+</body>
+</html>
+
